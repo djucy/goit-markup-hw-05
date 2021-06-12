@@ -6,12 +6,14 @@
   --lavender: #f5f4fa;
   --black-rock: #2f303a;
   --light-grey: #afb1b8;
+  --primary-color: #212121;
+  --c-grey: #eeeeee;
 }
 
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-style: normal;
-  color: #212121;
+  color: var(--primary-color);
   overflow-x: hidden;
 }
 /* General */
@@ -93,7 +95,7 @@ p {
   color: var(--grey);
 }
 .nav .nav-link {
-  color: #212121;
+  color: var(--body-color);
 }
 .nav-contact-link:hover,
 .nav-contact-link:focus,
@@ -588,7 +590,7 @@ img {
 .around-line {
   padding: 20px 24px;
 
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--c-grey);
 }
 .portfolio-item-text {
   margin-top: 4px;
@@ -675,7 +677,8 @@ img {
 
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
+  color: var(--black);
+  background-color: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
