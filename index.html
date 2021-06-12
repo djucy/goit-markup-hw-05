@@ -26,7 +26,7 @@
             <ul class="nav-list">
                 <li class="item"><a class="active-link" href="">Студия</a></li>
                 <li class="item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li class="item"><a class="nav-link" href="">Контакты</a></li>
+                <li class="item"><a class="nav-link" href="#contact">Контакты</a></li>
             </ul>
         </nav>
             <ul class="nav-contact">
@@ -51,7 +51,7 @@
         <section class="section section-title">
             <div class="container-title container">
                 <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button-service">Заказать услугу</button>
+                <button data-modal-open type="button" class="button-service">Заказать услугу</button>
            </div> 
         </section>
         
@@ -353,7 +353,7 @@
            <div class="adress-container">
                 <a class="logo" href=""><span class="web-logo">Web</span><span class="studio-logo">Studio</span></a>
                 <!-- Address section -->
-                    <address>
+                    <address id="contact">
                         <ul class="address">
                             <li>
                                 <p class="address-contact">г. Киев, пр-т Леси Украинки, 26</p>
@@ -404,5 +404,15 @@
         </div>
     </section>
 </footer>
-    
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button data-modal-close type="button" class="close-button">
+            <svg width="18px" height="18px">
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
+</body>    
 </html>
